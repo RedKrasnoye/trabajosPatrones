@@ -16,6 +16,25 @@ javac App.java
 java App.java
 ```
 
+## Las carpetas y archivos
+
+Las carpetas y archivos incluidos son los siguientes
+
+* trabajosPatrones
+    * generadorPlantillas
+      * bin
+        - App.class
+        - configuracionEvento.class
+        - credencialPlantilla.class
+      * src
+        - App.java
+        - configuracionEvento.java
+        - credencialPlantilla.java
+      - README.md
+    - README.md
+
+Aunque tiene los archivos class, si se usa `App.java` por consola, no funcionara, y estan separados debido al programa que use que fue `Visual Studio Code`. Funcionara si se hace lo de [arriba](#como-ejecutar).
+
 ## Patrón Prototype - Aplicación
 
 El archivo `credencialPlantilla.java` implementa el `Cloneable` lo cual le permite ser clonado, con el siguiente fragmento.
@@ -128,7 +147,7 @@ La `App` llama a los metodos de los demás permitiendole poder modificarlos adem
 
 ## Captura del sistema funcionando
 
-Se puede ver acá ua screenshot del programa siendo usado en la aplicación que fue creado, en este caso fue Visual Studio Code debido a su fácilidad y comodidad de uso para mi.
+Se puede ver acá ua screenshot del programa siendo usado en la aplicación que fue creado, en este caso fue `Visual Studio Code` debido a su fácilidad y comodidad de uso para mi.
 
 ![Screenshot de la terminal](https://files.catbox.moe/wcnpc2.PNG)
 
