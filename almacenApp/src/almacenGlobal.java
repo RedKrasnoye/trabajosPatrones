@@ -1,9 +1,9 @@
-import java.util.Dictionary;
-import java.util.Hashtable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class almacenGlobal {
     private static almacenGlobal instancia;
-    public Dictionary<String, String> items = new Hashtable<>();
+    public List<String> items = new ArrayList<>();
     
     private almacenGlobal() {}
 
@@ -14,7 +14,11 @@ public class almacenGlobal {
         return instancia;
     }
 
-    public void agregarLista (String nombre, String stock) {
-        items.put(nombre, stock);
+    public void agregarLista (String stock) {
+        items.add(stock);
+    }
+
+    public List<String> getItems() {
+        return items;
     }
 }
