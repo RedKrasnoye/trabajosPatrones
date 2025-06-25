@@ -4,15 +4,19 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("");
-        boolean loop = true;
+        boolean loopAlmacen = true;
         Scanner scanner = new Scanner(System.in);
         almacenGlobal almacen = almacenGlobal.getInstancia();
-        while (loop==true) {
+        archivadero archivar = new archivadero();
+        
+        while (loopAlmacen == true) {
             clearScreen();
             System.out.println("== Menu ==");
             System.out.println("1. Añadir dulce");
             System.out.println("2. Ver items");
             System.out.println("3. Eliminar item");
+            System.out.println("4. Guardar stock");
+            System.out.println("5. Salir");
             String opcion = scanner.nextLine();
             switch (opcion) {
                 case "1":
@@ -43,6 +47,20 @@ public class App {
                     almacen.eliminarStock(eliminarStock);
                     System.out.println("Presione (<┘) para continuar");
                     System.in.read();
+                    break;
+                case "4":
+                    System.out.println("¿Que nombre le quiere dar al archivo?");
+                    String nombreJson = scanner.nextLine();
+                    archivar.guardarDatos(almacen.getStock(), nombreJson);
+                    System.out.println("Archivo .json creado");
+                    System.out.println("Presione (<┘) para continuar");
+                    System.in.read();
+                    break;
+                case "5":
+                    System.out.println("Tenga un buen día");
+                    System.out.println("Presione (<┘) para continuar");
+                    System.in.read();
+                    loopAlmacen = false;
                     break;
                 default:
                     System.out.println("Ninguna opción elegida.");

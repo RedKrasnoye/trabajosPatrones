@@ -2,9 +2,7 @@ import java.util.HashMap;
 
 public class almacenGlobal {
     private static almacenGlobal instancia;
-    public HashMap<String, String> items = new HashMap<>();
-    
-    private almacenGlobal() {}
+    private HashMap<String, String> items = new HashMap<>();
 
     public static almacenGlobal getInstancia() {
         if (instancia == null) {
@@ -21,6 +19,10 @@ public class almacenGlobal {
         for(String i: items.keySet()) {
             System.out.println("Codigo: "+i+" / "+items.get(i));
         }
+    }
+
+    public HashMap<String, String> getStock(){
+        return items;
     }
 
     public void eliminarStock(String stock) {
