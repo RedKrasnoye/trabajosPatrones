@@ -1,9 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 
 public class almacenGlobal {
     private static almacenGlobal instancia;
-    public List<String> items = new ArrayList<>();
+    public HashMap<String, String> items = new HashMap<>();
     
     private almacenGlobal() {}
 
@@ -14,11 +13,18 @@ public class almacenGlobal {
         return instancia;
     }
 
-    public void agregarLista (String stock) {
-        items.add(stock);
+    public void agregarLista (String llave, String stock) {
+        items.put(llave, stock);
     }
 
-    public List<String> getItems() {
-        return items;
+    public void verStock(){
+        for(String i: items.keySet()) {
+            System.out.println("Codigo: "+i+" / "+items.get(i));
+        }
+    }
+
+    public void eliminarStock(String stock) {
+        System.out.println("Se elimino: ["+stock+"]");
+        items.remove(stock);
     }
 }
