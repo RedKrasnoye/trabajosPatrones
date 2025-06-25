@@ -7,7 +7,6 @@ public class App {
         boolean loopAlmacen = true;
         Scanner scanner = new Scanner(System.in);
         almacenGlobal almacen = almacenGlobal.getInstancia();
-        archivadero archivar = new archivadero();
         
         while (loopAlmacen == true) {
             clearScreen();
@@ -51,8 +50,7 @@ public class App {
                 case "4":
                     System.out.println("¿Que nombre le quiere dar al archivo?");
                     String nombreJson = scanner.nextLine();
-                    archivar.guardarDatos(almacen.getStock(), nombreJson);
-                    System.out.println("Archivo .json creado");
+                    System.out.println("Error: Archivo .json no creado");
                     System.out.println("Presione (<┘) para continuar");
                     System.in.read();
                     break;
