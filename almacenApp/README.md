@@ -125,14 +125,6 @@ String eliminarStock = scanner.nextLine();
 almacen.eliminarStock(eliminarStock);
 ```
 
-Tomar y usar el mismo `HashMap`:
-
-```java
-System.out.println("¿Que nombre le quiere dar al archivo?");
-String nombreJson = scanner.nextLine();
-archivar.guardarDatos(almacen.getStock(), nombreJson);
-```
-
 ### Prototype
 
 El archivo `itemPrototype.java` implementa el patrón `Prototype`, esto se hizo debido a las optimizaciones que da al no tener que crear el mismo objeto de la nada una y otra vez, permitiéndole hacerlo de una forma más rápida, además de poder expandir diferentes clases que necesites los mismos parámetros base, que por ahora es solo uno. Se puede ver cómo se hizo en `itemProrotype.java` de la siguiente manera:
