@@ -30,12 +30,9 @@ Las carpetas y archivos incluidos en este trabajo son los siguientes:
 * trabajosPatrones
   - almacenApp
     - img
-    - lib
-      - gson-2.13.1.jar
     - src
       - almacenGlobal.java
       - App.java
-      - archivadero.java
       - itemDulce.java
       - itemPrototype.java
     - README.md
@@ -204,6 +201,9 @@ Lo siguiente es lo que se puede ver al ejecutar `App.java` en la consola, esto p
 
 Se puede ver acá una screenshot de la `App` siendo usado en la aplicación `Visual Studio Code`.
 La limpieza automática de la terminal fue desactivada para mostrar su funcionamiento.
+
+> [!WARNING]
+> Debido a problemas de ultimo minuto el guardar a .json no funciona.
 
 ![Screenshot de la terminal](img/AppFuncionando.png)
 
