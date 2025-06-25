@@ -27,17 +27,18 @@ java App.java
 
 Las carpetas y archivos incluidos en este trabajo son los siguientes:
 
-- trabajosPatrones
-  - generadorPlantillas
-    - img
-    - lib
+* trabajosPatrones
+  - almacenApp
+    - img
+    - lib
       - gson-2.13.1.jar
-    - src
-      - App.java
-      - configuracionEvento.java
-      - credencialPlantilla.java
-    * README.md
-  * README.md
+    - src
+      - almacenGlobal.java
+      - App.java
+      - archivadero.java
+      - itemDulce.java
+      - itemPrototype.java
+    - README.md
 
 Esto no incluye el .Class a sí que solo funcionará si se hace lo de [arriba](#como-ejecutar).
 
