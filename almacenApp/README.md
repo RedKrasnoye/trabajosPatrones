@@ -46,7 +46,7 @@ Esto no incluye el .Class a sí que solo funcionará si se hace lo de [arriba](#
 
 He decidido hacer el `Diagrama de Clases` para poder hacer mejor el programa y de forma más ordenada. Puede ver el diagrama aquí:
 
-![Imagen de Diagrama de Clases](https://files.catbox.moe/bofoq5.png)
+![Imagen de Diagrama de Clases](img/Evulacion3AlmacenApp.drawio.png)
 
 Esto es la mejor idea que tuve para un pequeño proyecto que puedo hacer base a mis entendimientos. Para sus explicaciónes del por qué, cómo y dónde, vea [la siguiente parte](#patrónes-y-su-explicación).
 
@@ -205,7 +205,7 @@ Lo siguiente es lo que se puede ver al ejecutar `App.java` en la consola, esto p
 Se puede ver acá una screenshot de la `App` siendo usado en la aplicación `Visual Studio Code`.
 La limpieza automática de la terminal fue desactivada para mostrar su funcionamiento.
 
-![Screenshot de la terminal](https://files.catbox.moe/u0wt8q.png)
+![Screenshot de la terminal](img/AppFuncionando.png)
 
 Aquí pasado a texto.
 
